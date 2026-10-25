@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علی شهنازی بجارسری</title>
+    <link rel="icon" type="image/png" href="photos/Neon Ribbon A App Icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+<nav class="header">
+    <h1 class="Update">توجه! این سایت در حال بروزرسانی و توسعه میباشد. از صبر و شکیبایی شما متشکریم.</h1>
+</nav>
+<header class="header">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="#"><img src="photos/Logo TP.png" alt="لوگوی علی شهنازی"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">درباره من</a></li>
+                <li><a href="#skills">مهارت‌ها</a></li>
+                <li><a href="#projects">پروژه‌ها</a></li>
+                <li><a href="certificates.html">گواهینامه‌ها</a></li>
+                <li><a href="#terminal">ترمینال</a></li>
+                <li><a href="#contact">تماس</a></li>
+            </ul>
+        </nav>
+        
+
+        <div class="header-actions">
+            <a href="index-en.html" class="lang-switch-btn">EN</a>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </div>
+</header>
+
+    <main>
+
+<section class="hero">
+    <div class="container hero-content">
+
+        <div class="hero-image">
+            <img src="photos/My Photo.png" alt="علی شهنازی بجارسری">
+        </div>
+        
+
+        <div class="hero-text">
+            <h1>سلام، من <span class="highlight">علی شهنازی بجارسری</span> هستم</h1>
+            <p>فارغ‌التحصیل کارشناسی مهندسی کامپیوتر از دانشگاه گیلان و توسعه‌دهنده نرم‌افزار</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">مشاهده پروژه‌ها</a>
+                <a href="#contact" class="btn secondary-btn">ارتباط با من</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="about" class="section container">
+            <h2>درباره من</h2>
+            <p>من به حل مسائل پیچیده، یادگیری تکنولوژی‌های جدید و ساختن پروژه‌های کاربردی علاقه دارم. همیشه در تلاشـم تا کدهایی تمیز، بهینه و قابل توسعه بنویسم.</p>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>مهارت‌های فنی</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Database Design</span>
+            </div>
+        </section>
+
+
+        <section id="projects" class="section container">
+            <h2>پروژه‌های برگزیده</h2>
+            <div id="projects-grid" class="projects-grid">
+             <div class="project-card">
+    <h3>چت‌بات هوش مصنوعی (ربات تلگرام)</h3>
+    <p>یک ربات تلگرامی هوشمند متصل به API که به صورت Real-time به کاربران پاسخ می‌دهد.</p>
+    <div style="margin-top: 1rem;">
+        <a href="https://t.me/Alish_AiAssistant_bot" target="_blank" class="btn primary-btn" style="display: inline-block; padding: 0.5rem 1rem; font-size: 0.9rem;">
+            <i class="fab fa-telegram-plane"></i> تست ربات در تلگرام
+        </a>
+    </div>
+</div>
+            </div>
+        </section>
+
+
+
+
+<section id="certificates" class="section container">
+    <div class="cert-preview-header">
+        <div>
+            <h2>گواهینامه‌ها و مدارک</h2>
+            <p>مجموعه‌ای از مدارک معتبر از Coursera، DeepLearning.AI، University of Michigan و...</p>
+        </div>
+        <a href="certificates.html" class="btn primary-btn">
+            مشاهده همه مدارک (15) <i class="fas fa-arrow-left"></i>
+        </a>
+    </div>
+
+
+    <div class="stats-mini">
+        <div class="stat-item">
+            <span class="num">15</span>
+            <span class="lbl">مدرک معتبر</span>
+        </div>
+        <div class="stat-item">
+            <span class="num">5</span>
+            <span class="lbl">پلتفرم صادرکننده</span>
+        </div>
+        <div class="stat-item">
+            <span class="num">2024</span>
+            <span class="lbl">از سال</span>
+        </div>
+    </div>
+
+<!-- 1 -->
+    <div class="cert-list cert-list-preview">
+        <div class="cert-list-item">
+            <div class="thumb" onclick="openCertModal(this.querySelector('img').src)">
+                <img src="certificates/Machine Learning.png" alt="Python Data Structures">
+            </div>
+            <div class="info">
+                
+                <h3>Machine Learning</h3>
+                <div class="meta">
+                    <span class="issuer">Stanford University / DeepLearning.AI</span>
+                    <span>May 12, 2025</span>
+                </div>
+            </div>
+            <a href="https://coursera.org/verify/specialization/K7LBCCPP1VZM" target="_blank" class="verify-badge" onclick="event.stopPropagation()">
+                <i class="fas fa-check-circle"></i> اعتبار سنجی مدرک
+            </a>
+        </div>
+<!-- 2 -->
+        <div class="cert-list-item">
+            <div class="thumb" onclick="openCertModal(this.querySelector('img').src)">
+                <img src="certificates/Neural Network.png" alt="Python Data Structures">
+            </div>
+            <div class="info">
+                <h3>Neural Networks and Deep Learning</h3>
+                <div class="meta">
+                    <span class="issuer">DeepLearning.AI / Coursera</span>
+                    <span>Sep 12, 2026</span>
+                </div>
+            </div>
+            <a href="https://coursera.org/verify/DY2U1D3DS61P" target="_blank" class="verify-badge" onclick="event.stopPropagation()">
+                <i class="fas fa-check-circle"></i> اعتبار سنجی مدرک
+            </a>
+        </div>
+<!-- 3 -->
+        <div class="cert-list-item">
+            <div class="thumb" onclick="openCertModal(this.querySelector('img').src)">
+                <img src="certificates/Python for Everybody.png" alt="Python Data Structures">
+            </div>
+            <div class="info">
+                <h3>Python for Everybody</h3>
+                <div class="meta">
+                    <span class="issuer">University of Michigan / Coursera</span>
+                    <span>Oct 9, 2025</span>
+                </div>
+            </div>
+            <a href="https://coursera.org/verify/specialization/9C0IYNSYA5UR" target="_blank" class="verify-badge" onclick="event.stopPropagation()">
+                <i class="fas fa-check-circle"></i> اعتبار سنجی مدرک
+            </a>
+        </div>
+<!-- 4 -->
+        <div class="cert-list-item" onclick="openCertModal(this.querySelector('img').src)">
+            <div class="thumb">
+                <img src="certificates/Intruduction to Front-End development.png" alt="Python Data Structures">
+            </div>
+            <div class="info">
+                <h3>Introduction to Front-End</h3>
+                <div class="meta">
+                    <span class="issuer">Meta / Coursera</span>
+                    <span>Jul 31, 2025</span>
+                </div>
+            </div>
+            <a href="https://coursera.org/verify/VGRVYNC6VO10" target="_blank" class="verify-badge" onclick="event.stopPropagation()">
+                <i class="fas fa-check-circle"></i> اعتبار سنجی مدرک
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+        <section id="terminal" class="section container">
+            <h2>محیط ترمینال</h2>
+            <div class="terminal-box">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">ali@portfolio: ~</span>
+                </div>
+                <div id="terminal-body" class="terminal-body">
+                    <p>خوش آمدید! برای دیدن دستورات عبارت <span class="cmd-highlight">help</span> را تایپ کنید.</p>
+                </div>
+                <div class="terminal-input-line">
+                    <span>$&gt;</span>
+                    <input type="text" id="terminal-input" autocomplete="off">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section container">
+            <h2>ارتباط با من</h2>
+            <p>می‌توانید از طریق فرم زیر یا شبکه‌های اجتماعی با من در ارتباط باشید.</p>
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="نام شما" required>
+                <input type="email" placeholder="ایمیل شما" required>
+                <textarea placeholder="پیام خود را بنویسید..." rows="4" required></textarea>
+                <button type="submit" class="btn primary-btn">ارسال پیام</button>
+            </form>
+        </section>
+    </main>
+
+
+    
+
+
+<div class="social-links-container">
+    <h3>شبکه‌های اجتماعی</h3>
+    <div class="social-grid-minimal">
+        <a href="https://linkedin.com/in/ali-shahnazi-678bba342" target="_blank" class="social-icon linkedin" title="LinkedIn" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://t.me/awlishahnazi" target="_blank" class="social-icon telegram" title="Telegram" aria-label="Telegram">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://wa.me/+989115616919" target="_blank" class="social-icon whatsapp" title="WhatsApp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/_alishahnazi_" target="_blank" class="social-icon instagram" title="Instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/awlishahnazi" target="_blank" class="social-icon twitter" title="Twitter" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/Awlishahnazi" target="_blank" class="social-icon github" title="GitHub" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-left">
+            <p class="footer-signature">طراحی و توسعه‌یافته توسط <strong>علی شهنازی بجارسری</strong></p>
+            <p class="footer-subtext">دانش‌آموخته کارشناسی مهندسی کامپیوتر — دانشگاه گیلان</p>
+        </div>
+        <div class="footer-right">
+            <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<div id="cert-modal" class="cert-modal" onclick="closeCertModal()">
+    <span class="cert-modal-close">&times;</span>
+    <img id="cert-modal-img" class="cert-modal-content" alt="گواهی">
+</div>
+
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
+<div class="chat-widget-container">
+
+    <button id="chat-toggle-btn" class="chat-toggle-btn" title="گفتگو با ربات هوش مصنوعی">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+
+    <div id="chat-window" class="chat-window hidden">
+        <div class="chat-header">
+            <span>چت‌بات هوش مصنوعی علی</span>
+            <button id="chat-close-btn">&times;</button>
+        </div>
+        <div id="chat-body" class="chat-body">
+            <div class="message bot-message">سلام! من ربات هوش مصنوعی علی هستم. چطور می‌توانم کمکتان کنم؟</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="پیام خود را بنویسید..." autocomplete="off">
+            <button id="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

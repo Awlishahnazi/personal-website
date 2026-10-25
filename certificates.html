@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گواهینامه‌ها | علی شهنازی بجارسری</title>
+    <link rel="icon" type="image/png" href="photos/Neon Ribbon A App Icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="header">
+    <h1 class="Update">توجه! این سایت در حال بروزرسانی و توسعه میباشد. از صبر و شکیبایی شما متشکریم.</h1>
+</nav>
+
+<header class="header">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html"><img src="photos/Logo TP.png" alt="لوگوی علی شهنازی"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#about">درباره من</a></li>
+                <li><a href="index.html#skills">مهارت‌ها</a></li>
+                <li><a href="index.html#projects">پروژه‌ها</a></li>
+                <li><a href="certificates.html" class="active">گواهینامه‌ها</a></li>
+                <li><a href="index.html#terminal">ترمینال</a></li>
+                <li><a href="index.html#contact">تماس</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="certificates-en.html" class="lang-switch-btn">EN</a>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+
+    <section class="page-hero">
+        <h1>گواهینامه‌ها و <span class="highlight">مدارک آکادمیک</span></h1>
+        <p>مجموعه‌ای از مدارک معتبر که در طول مسیر یادگیری و توسعه مهارت‌های فنی کسب کرده‌ام.</p>
+        <div class="stats-banner">
+            <div class="stat-box">
+                <div class="num">15</div>
+                <div class="label">مدرک معتبر</div>
+            </div>
+            <div class="stat-box">
+                <div class="num">5</div>
+                <div class="label">پلتفرم صادرکننده</div>
+            </div>
+            <div class="stat-box">
+                <div class="num">2024</div>
+                <div class="label">شروع یادگیری</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- Toolbar -->
+        <div class="cert-toolbar">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="certSearch" placeholder="جستجو در مدارک... (مثلاً Python)">
+            </div>
+            <select id="certFilter">
+                <option value="all">همه پلتفرم‌ها</option>
+                <option value="coursera">Coursera</option>
+                <option value="deeplearning">DeepLearning.AI</option>
+                <option value="michigan">University of Michigan</option>
+                <option value="meta">Meta</option>
+                <option value="stanford">Stanford University</option>
+                <option value="ibm">IBM</option>
+                <option value="google">Google</option>
+            </select>
+            <select id="certSort">
+                <option value="newest">جدیدترین</option>
+                <option value="oldest">قدیمی‌ترین</option>
+                <option value="alpha">الفبایی</option>
+            </select>
+        </div>
+
+
+        <div id="certContainer" class="certificates-grid-full">
+
+
+            <div class="cert-year-group" data-year="2026">
+                <h3 class="year-divider"><span>2026</span></h3>
+                <div class="cert-grid-inner">
+
+                    <div class="cert-card-big" data-title="Neural Networks and Deep Learning" data-issuer="deeplearning" data-date="2026-09-12">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Neural Network.png')">
+                            <img src="certificates/Neural Network.png" alt="Neural Networks and Deep Learning">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Neural Networks and Deep Learning</h3>
+                            <p class="cert-issuer">DeepLearning.AI / Coursera</p>
+                            <span class="cert-date">تاریخ دریافت: Sep 12, 2026</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/DY2U1D3DS61P" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> اعتبارسنجی آنلاین
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="cert-year-group" data-year="2025">
+                <h3 class="year-divider"><span>2025</span></h3>
+                <div class="cert-grid-inner">
+
+                    <div class="cert-card-big" data-title="Machine Learning" data-issuer="stanford" data-date="2025-05-12">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Machine Learning.png')">
+                            <img src="certificates/Machine Learning.png" alt="Machine Learning">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Machine Learning</h3>
+                            <p class="cert-issuer">Stanford University / DeepLearning.AI</p>
+                            <span class="cert-date">تاریخ دریافت: May 12, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/specialization/K7LBCCPP1VZM" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> اعتبارسنجی آنلاین
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-big" data-title="Python for Everybody" data-issuer="michigan" data-date="2025-10-09">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Python for Everybody.png')">
+                            <img src="certificates/Python for Everybody.png" alt="Python for Everybody">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Python for Everybody</h3>
+                            <p class="cert-issuer">University of Michigan / Coursera</p>
+                            <span class="cert-date">تاریخ دریافت: Oct 9, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/specialization/9C0IYNSYA5UR" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> اعتبارسنجی آنلاین
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-big" data-title="Introduction to Front-End" data-issuer="meta" data-date="2025-07-31">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Intruduction to Front-End development.png')">
+                            <img src="certificates/Intruduction to Front-End development.png" alt="Introduction to Front-End">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Introduction to Front-End</h3>
+                            <p class="cert-issuer">Meta / Coursera</p>
+                            <span class="cert-date">تاریخ دریافت: Jul 31, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/VGRVYNC6VO10" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> اعتبارسنجی آنلاین
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="no-result" id="noResult">
+            <i class="fas fa-search"></i>
+            <h3>مدرکی یافت نشد</h3>
+            <p>عبارت جستجو یا فیلتر را تغییر دهید.</p>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-left">
+            <p class="footer-signature">طراحی و توسعه‌یافته توسط <strong>علی شهنازی بجارسری</strong></p>
+            <p class="footer-subtext">دانش‌آموخته کارشناسی مهندسی کامپیوتر — دانشگاه گیلان</p>
+        </div>
+        <div class="footer-right">
+            <a href="index.html" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<div id="cert-modal" class="cert-modal" onclick="closeCertModal()">
+    <span class="cert-modal-close">&times;</span>
+    <img id="cert-modal-img" class="cert-modal-content" alt="گواهی">
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/certificates.js"></script>
+
+</body>
+</html>
