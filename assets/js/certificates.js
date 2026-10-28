@@ -1,17 +1,20 @@
 function openCertModal(imageSrc) {
     const modal = document.getElementById('cert-modal');
     const modalImg = document.getElementById('cert-modal-img');
-    modalImg.src = imageSrc;
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    if(modal && modalImg) {
+        modalImg.src = imageSrc;
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
 }
 
 function closeCertModal() {
     const modal = document.getElementById('cert-modal');
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
+    if(modal) {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+    }
 }
-
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
@@ -26,10 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (certModalImg) {
         certModalImg.addEventListener('click', (e) => e.stopPropagation());
     }
-});
 
-
-document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('certSearch');
     const filterSelect = document.getElementById('certFilter');
     const sortSelect = document.getElementById('certSort');
@@ -50,13 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const items = Array.from(grid.querySelectorAll('.cert-card-big'));
 
             items.forEach(item => {
-                const title = item.dataset.title.toLowerCase();
-                const issuer = item.dataset.issuer;
+
+                const title = item.getAttribute('data-title').toLowerCase();
+                const issuer = item.getAttribute('data-issuer');
+                
                 const matchQuery = !query || title.includes(query);
                 const matchFilter = filter === 'all' || issuer === filter;
 
                 if (matchQuery && matchFilter) {
-                    item.style.display = '';
+                    item.style.display = ''; 
                     visibleInGroup++;
                     totalVisible++;
                 } else {
@@ -68,9 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (sort !== 'default' && visibleInGroup > 0) {
                 const visibleItems = items.filter(i => i.style.display !== 'none');
                 visibleItems.sort((a, b) => {
-                    if (sort === 'alpha') return a.dataset.title.localeCompare(b.dataset.title);
-                    const da = new Date(a.dataset.date);
-                    const db = new Date(b.dataset.date);
+                    if (sort === 'alpha') return a.getAttribute('data-title').localeCompare(b.getAttribute('data-title'));
+                    const da = new Date(a.getAttribute('data-date'));
+                    const db = new Date(b.getAttribute('data-date'));
                     return sort === 'newest' ? db - da : da - db;
                 });
                 visibleItems.forEach(i => grid.appendChild(i));
@@ -81,8 +83,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
 
-        if (noResult) noResult.classList.toggle('show', totalVisible === 0);
+        if (noResult) {
+            if (totalVisible === 0) {
+                noResult.classList.add('show');
+            } else {
+                noResult.classList.remove('show');
+            }
+        }
     }
+
+    applyFilters();
 
     searchInput.addEventListener('input', applyFilters);
     filterSelect.addEventListener('change', applyFilters);

@@ -38,7 +38,6 @@
 
 <main>
 
-
     <section class="page-hero">
         <h1>Certificates & <span class="highlight">Credentials</span></h1>
         <p>A curated collection of verified certificates earned throughout my learning journey and technical skill development.</p>
@@ -52,7 +51,7 @@
                 <div class="label">Issuing Platforms</div>
             </div>
             <div class="stat-box">
-                <div class="num">2024</div>
+                <div class="num">2023</div>
                 <div class="label">Started Learning</div>
             </div>
         </div>
@@ -68,13 +67,13 @@
             </div>
             <select id="certFilter">
                 <option value="all">All Platforms</option>
-                <option value="coursera">Coursera</option>
                 <option value="deeplearning">DeepLearning.AI</option>
                 <option value="michigan">University of Michigan</option>
                 <option value="meta">Meta</option>
                 <option value="stanford">Stanford University</option>
                 <option value="ibm">IBM</option>
                 <option value="google">Google</option>
+                <option value="University of Guilan">University of Guilan</option>
             </select>
             <select id="certSort">
                 <option value="newest">Newest First</option>
@@ -82,7 +81,6 @@
                 <option value="alpha">Alphabetical</option>
             </select>
         </div>
-
 
         <div id="certContainer" class="certificates-grid-full">
 
@@ -110,6 +108,7 @@
                 </div>
             </div>
 
+
             <div class="cert-year-group" data-year="2025">
                 <h3 class="year-divider"><span>2025</span></h3>
                 <div class="cert-grid-inner">
@@ -130,6 +129,70 @@
                         </div>
                     </div>
 
+                    <div class="cert-card-big" data-title="Advanced Learning Algorithms" data-issuer="stanford" data-date="2025-02-27">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Advanced learning Algorithm.png')">
+                            <img src="certificates/Advanced learning Algorithm.png" alt="Advanced Learning Algorithms">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Advanced Learning Algorithms</h3>
+                            <p class="cert-issuer">DeepLearning.AI / Stanford University</p>
+                            <span class="cert-date">Issued: Feb 27, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/ICVAX76G8OAM" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> Verify Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-big" data-title="Capstone: Retrieving, Processing, and Visualizing Data with Python" data-issuer="michigan" data-date="2025-10-09">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Capstone.png')">
+                            <img src="certificates/Capstone.png" alt="Capstone: Retrieving, Processing, and Visualizing Data with Python">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Capstone: Retrieving, Processing, and Visualizing Data with Python</h3>
+                            <p class="cert-issuer">University of Michigan / Coursera</p>
+                            <span class="cert-date">Issued: Oct 9, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/3IRRXUR1NM7A" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> Verify Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="cert-card-big" data-title="Programming for Everybody (Getting Started with Python)" data-issuer="michigan" data-date="2025-04-14">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Programming for everybody.png')">
+                            <img src="certificates/Programming for everybody.png" alt="Programming for Everybody">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Programming for Everybody (Getting Started with Python)</h3>
+                            <p class="cert-issuer">University of Michigan / Coursera</p>
+                            <span class="cert-date">Issued: Apr 14, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/VSVTTV2OVV9R" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> Verify Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>       
+
+                    <div class="cert-card-big" data-title="Python Data Structures" data-issuer="michigan" data-date="2025-05-18">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Python Data Structures.png')">
+                            <img src="certificates/Python Data Structures.png" alt="Python Data Structures">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Python Data Structures</h3>
+                            <p class="cert-issuer">University of Michigan / Coursera</p>
+                            <span class="cert-date">Issued: May 18, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/XNLCEHXZ210S" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> Verify Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>       
+
                     <div class="cert-card-big" data-title="Python for Everybody" data-issuer="michigan" data-date="2025-10-09">
                         <div class="cert-img-box" onclick="openCertModal('certificates/Python for Everybody.png')">
                             <img src="certificates/Python for Everybody.png" alt="Python for Everybody">
@@ -146,12 +209,60 @@
                         </div>
                     </div>
 
-                    <div class="cert-card-big" data-title="Introduction to Front-End" data-issuer="meta" data-date="2025-07-31">
-                        <div class="cert-img-box" onclick="openCertModal('certificates/Intruduction to Front-End development.png')">
-                            <img src="certificates/Intruduction to Front-End development.png" alt="Introduction to Front-End">
+                    <div class="cert-card-big" data-title="Unsupervised Learning, Recommenders, Reinforcement Learning" data-issuer="stanford" data-date="2025-05-12">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Unsupervised Learning.png')">
+                            <img src="certificates/Unsupervised Learning.png" alt="Unsupervised Learning">
                         </div>
                         <div class="cert-info">
-                            <h3>Introduction to Front-End</h3>
+                            <h3>Unsupervised Learning, Recommenders, Reinforcement Learning</h3>
+                            <p class="cert-issuer">DeepLearning.AI / Stanford University</p>
+                            <span class="cert-date">Issued: May 12, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/IT6B8UV7QOYC" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> Verify Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-big" data-title="Using Databases with Python" data-issuer="michigan" data-date="2025-09-19">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Using databases with python.png')">
+                            <img src="certificates/Using databases with python.png" alt="Using Databases with Python">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Using Databases with Python</h3>
+                            <p class="cert-issuer">University of Michigan / Coursera</p>
+                            <span class="cert-date">Issued: Sep 19, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/2M7FELEECHJT" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> Verify Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-big" data-title="Using Python to Access Web Data" data-issuer="michigan" data-date="2025-07-02">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Using Python to access web data.png')">
+                            <img src="certificates/Using Python to access web data.png" alt="Using Python to Access Web Data">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Using Python to Access Web Data</h3>
+                            <p class="cert-issuer">University of Michigan / Coursera</p>
+                            <span class="cert-date">Issued: Jul 2, 2025</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/V1D3PJTWJ16C" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> Verify Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-big" data-title="Introduction to Front-End Development" data-issuer="meta" data-date="2025-07-31">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Intruduction to Front-End development.png')">
+                            <img src="certificates/Intruduction to Front-End development.png" alt="Introduction to Front-End Development">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Introduction to Front-End Development</h3>
                             <p class="cert-issuer">Meta / Coursera</p>
                             <span class="cert-date">Issued: Jul 31, 2025</span>
                             <div class="cert-actions">
@@ -159,6 +270,59 @@
                                     <i class="fas fa-check-circle"></i> Verify Online
                                 </a>
                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="cert-year-group" data-year="2024">
+                <h3 class="year-divider"><span>2024</span></h3>
+                <div class="cert-grid-inner">
+
+                    <div class="cert-card-big" data-title="Scrum Foundation" data-issuer="Ultima Traning Tech co." data-date="2024-03-11">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Scrum.png')">
+                            <img src="certificates/Scrum.png" alt="Scrum Foundation">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Scrum Foundation</h3>
+                            <p class="cert-issuer">University of Guilan</p>
+                            <span class="cert-date">Issued: Mar 11, 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-big" data-title="Supervised Machine Learning: Regression and Classification" data-issuer="stanford" data-date="2024-12-21">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Supervised Machine Learning.png')">
+                            <img src="certificates/Supervised Machine Learning.png" alt="Supervised Machine Learning">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Supervised Machine Learning: Regression and Classification</h3>
+                            <p class="cert-issuer">Stanford University / Coursera</p>
+                            <span class="cert-date">Issued: Dec 21, 2024</span>
+                            <div class="cert-actions">
+                                <a href="https://coursera.org/verify/954B6ORKCKSK" target="_blank" class="verify-link">
+                                    <i class="fas fa-check-circle"></i> Verify Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cert-year-group" data-year="2023">
+                <h3 class="year-divider"><span>2023</span></h3>
+                <div class="cert-grid-inner">
+
+                    <div class="cert-card-big" data-title="Git & Github Bootcamp" data-issuer="University of Guilan" data-date="2023-04-21">
+                        <div class="cert-img-box" onclick="openCertModal('certificates/Git.png')">
+                            <img src="certificates/Git.png" alt="Git & Github Bootcamp">
+                        </div>
+                        <div class="cert-info">
+                            <h3>Git & Github Bootcamp</h3>
+                            <p class="cert-issuer">University of Guilan</p>
+                            <span class="cert-date">Issued: Apr 21, 2023</span>
                         </div>
                     </div>
 
