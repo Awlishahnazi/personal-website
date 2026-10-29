@@ -58,23 +58,71 @@ if (terminalInput && terminalBody) {
 
             const responseLine = document.createElement('p');
             
-            switch(command) {
-                case 'help':
-                    responseLine.innerHTML = "دستورات موجود:<br>- <span class='cmd-highlight'>about</span>: درباره من<br>- <span class='cmd-highlight'>skills</span>: مهارت‌ها<br>- <span class='cmd-highlight'>clear</span>: پاک کردن صفحه";
-                    break;
-                case 'about':
-                    responseLine.textContent = "من علی هستم، مهندس کامپیوتر و عاشق توسعه نرم‌افزار.";
-                    break;
-                case 'skills':
-                    responseLine.textContent = "مهارت‌ها: HTML, CSS, JavaScript, Git, Docker, Python";
-                    break;
-                case 'clear':
-                    terminalBody.innerHTML = '';
-                    responseLine.textContent = '';
-                    break;
-                default:
-                    responseLine.textContent = `دستور ناشناخته: ${command}. عبارت help را تایپ کنید.`;
-            }
+        switch(command) {
+            case 'help':
+                responseLine.innerHTML = `
+                    <div>دستورات موجود:</div>
+                    <div>- <span class='cmd-highlight'>about</span>: درباره من</div>
+                    <div>- <span class='cmd-highlight'>skills</span>: مهارت‌ها</div>
+                    <div>- <span class='cmd-highlight'>projects</span>: لیست پروژه‌ها</div>
+                    <div>- <span class='cmd-highlight'>contact</span>: راه‌های ارتباطی</div>
+                    <div>- <span class='cmd-highlight'>whoami</span>: نمایش نام کاربر</div>
+                    <div>- <span class='cmd-highlight'>date</span>: نمایش تاریخ و زمان</div>
+                    <div>- <span class='cmd-highlight'>echo [متن]</span>: تکرار متن شما</div>
+                    <div>- <span class='cmd-highlight'>clear</span>: پاک کردن صفحه</div>
+                `;
+                break;
+                
+            case 'about':
+                responseLine.textContent = "من علی هستم، مهندس کامپیوتر و عاشق توسعه نرم‌افزار.";
+                break;
+                
+            case 'skills':
+                responseLine.textContent = "مهارت‌ها: Python, HTML/CSS, JavaScript, Git, Docker, Database Design";
+                break;
+
+            case 'projects':
+                responseLine.innerHTML = `
+                    <div>پروژه‌های من:</div>
+                    <div>1. چت‌بات هوش مصنوعی (ربات تلگرام)</div>
+                    <div>2. وب‌سایت نمونه کار شخصی (همین سایت!)</div>
+                    <div>3. سیستم مدیریت پایگاه داده</div>
+                `;
+                break;
+
+            case 'contact':
+                responseLine.innerHTML = `
+                    <div>ایمیل: alishahnazi83@gmail.com</div>
+                    <div>لینکدین: linkedin.com/in/ali-shahnazi-678bba342</div>
+                    <div>گیت‌هاب: github.com/Awlishahnazi</div>
+                `;
+                break;
+
+            case 'whoami':
+                responseLine.textContent = "guest (کاربر مهمان)";
+                break;
+
+            case 'date':
+                responseLine.textContent = new Date().toLocaleString('fa-IR');
+                break;
+
+            case 'sudo':
+                responseLine.textContent = "bash: sudo: Permission denied. You are not root!";
+                break;
+
+            case 'clear':
+                terminalBody.innerHTML = '';
+                responseLine.textContent = '';
+                break;
+
+            default:
+                // پشتیبانی از دستور echo (مثلاً: echo Hello World)
+                if (command.startsWith('echo ')) {
+                    responseLine.textContent = command.substring(5);
+                } else {
+                    responseLine.textContent = `bash: command not found: ${command}. Type 'help' for a list of commands.`;
+                }
+        }
 
             if (command !== 'clear') {
                 terminalBody.appendChild(responseLine);
