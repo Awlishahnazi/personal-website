@@ -6,7 +6,7 @@
     --primary-color: #38bdf8;
     --primary-hover: #0ea5e9;
     --border-color: rgba(51, 65, 85, 0.6); 
-    --bg-image: url('../../photos/bg-dark.png');
+    --bg-image: url('/photos/bg-dark.png');
 }
 
 [data-theme="light"] {
@@ -17,7 +17,7 @@
     --primary-color: #0284c7;
     --primary-hover: #0369a1;
     --border-color: rgba(226, 232, 240, 0.6);
-    --bg-image: url('../../photos/bg-light.png');
+    --bg-image: url('/photos/bg-light.png');
 }
 
 * {
