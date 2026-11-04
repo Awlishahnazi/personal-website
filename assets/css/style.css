@@ -1151,16 +1151,19 @@ html[dir="ltr"] .terminal-input-line span {
         padding-bottom: 0;
     }
 
-    /* ===== تنظیمات بقیه بخش‌ها در گوشی ===== */
+    .hero {
+        padding: 1rem 1rem !important; 
+    }
+
     .hero-content {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .hero-image img {
-        width: 170px;
-        height: 170px;
+        width: 140px;
+        height: 140px;
     }
 
     .hero-btns {
@@ -1185,9 +1188,17 @@ html[dir="ltr"] .terminal-input-line span {
     
     .stats-banner { grid-template-columns: 1fr; }
     .stats-mini { justify-content: space-around; }
+
+    .hero-text h1 {
+        margin-bottom: 0.4rem; 
+    }
+    
+    .hero-text p {
+        margin-bottom: 1rem; 
+    }
 }
 
-/* ===== تنظیمات برای گوشی‌های خیلی کوچک ===== */
+
 @media (max-width: 500px) {
     .social-icon {
         width: 40px;
