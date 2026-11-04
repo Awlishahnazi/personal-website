@@ -178,3 +178,21 @@ if (chatToggleBtn && chatWindow) {
         }
     });
 }
+
+
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mainNav = document.getElementById('main-nav');
+
+if (mobileMenuBtn && mainNav) {
+    mobileMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); 
+        mainNav.classList.toggle('active');
+    });
+
+
+    document.addEventListener('click', (e) => {
+        if (mainNav.classList.contains('active') && !mainNav.contains(e.target) && e.target !== mobileMenuBtn) {
+            mainNav.classList.remove('active');
+        }
+    });
+}
