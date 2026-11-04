@@ -1119,3 +1119,9 @@ html[dir="ltr"] .terminal-input-line span {
         gap: 1rem;
     }
 }
+
+
+.social-icon.email:hover { 
+    background: #ea4335; 
+    border-color: #ea4335; 
+}
