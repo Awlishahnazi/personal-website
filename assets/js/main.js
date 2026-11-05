@@ -11,40 +11,6 @@ if (themeToggleBtn) {
     });
 }
 
-
-const projectsGrid = document.getElementById('projects-grid');
-if (projectsGrid) {
-    const projects = [
-        {
-            title: "سیستم مدیریت پایگاه داده",
-            description: "پیاده‌سازی یک ساختار بهینه برای ذخیره‌سازی و بازیابی اطلاعات با کنترل تراکنش‌ها.",
-            tech: "Python / SQL"
-        },
-        {
-            title: "سیستم اتوماسیون با Docker",
-            description: "کانتینری کردن سرویس‌ها و راه‌اندازی فرآیند پشتیبان‌گیری خودکار روزانه.",
-            tech: "Docker / Linux / Bash"
-        },
-        {
-            title: "وب‌سایت نمونه کار شخصی",
-            description: "طراحی و توسعه وب‌سایت شخصی با HTML5، CSS3 و جاوااسکریپت خالص بدون فریم‌ورک.",
-            tech: "HTML / CSS / JS"
-        }
-    ];
-    
-    projects.forEach(project => {
-        const card = document.createElement('div');
-        card.className = 'project-card';
-        card.innerHTML = `
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <span class="skill-tag">${project.tech}</span>
-        `;
-        projectsGrid.appendChild(card);
-    });
-}
-
-
 const terminalInput = document.getElementById('terminal-input');
 const terminalBody = document.getElementById('terminal-body');
 
@@ -116,7 +82,7 @@ if (terminalInput && terminalBody) {
                 break;
 
             default:
-                // پشتیبانی از دستور echo (مثلاً: echo Hello World)
+
                 if (command.startsWith('echo ')) {
                     responseLine.textContent = command.substring(5);
                 } else {
