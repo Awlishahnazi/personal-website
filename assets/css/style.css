@@ -589,7 +589,7 @@ html[dir="ltr"] .terminal-input-line span {
     display: flex;
     padding: 0.75rem;
     border-top: 1px solid var(--border-color);
-    background-color: transparent; /* شفاف شد تا بک‌گراند ویجت دیده شود */
+    background-color: transparent; 
     gap: 0.5rem;
 }
 
@@ -1099,6 +1099,25 @@ html[dir="ltr"] .terminal-input-line span {
 
 @media (max-width: 768px) {
 
+    .nav-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
     .mobile-menu-btn {
         display: block !important;
         color: var(--text-color);
@@ -1107,7 +1126,15 @@ html[dir="ltr"] .terminal-input-line span {
         border: none;
         cursor: pointer;
         padding: 0.5rem;
+        order: 1; 
+        margin-right: 0;
         margin-left: 0.5rem;
+        z-index: 1001;
+    }
+
+    .header-actions {
+        order: -1;
+        gap: 0.5rem;
     }
 
 
