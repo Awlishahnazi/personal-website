@@ -223,13 +223,15 @@ body::before {
 }
 
 .project-card h3 {
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
 .project-card p {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
 .terminal-box {
@@ -1242,8 +1244,8 @@ html[dir="ltr"] .terminal-input-line span {
     }
     
     .container {
-        width: 92%;
-        padding: 1.5rem 0;
+        width: 95%;
+        padding: 1rem 0;
     }
     .hero h1 {
         font-size: 1.8rem;
@@ -1285,7 +1287,7 @@ html[dir="ltr"] .terminal-input-line span {
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.1rem;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -1295,16 +1297,16 @@ html[dir="ltr"] .terminal-input-line span {
 }
 
 .project-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 12px;
     background: rgba(56, 189, 248, 0.1);
     color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
     transition: transform 0.3s ease, background 0.3s ease;
     align-self: flex-start; 
 }
@@ -1319,14 +1321,14 @@ html[dir="ltr"] .terminal-input-line span {
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
     margin-top: auto; 
     margin-bottom: 1rem; 
 }
 
 .project-tech .skill-tag {
-    font-size: 0.75rem;
-    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
 }
 
 
